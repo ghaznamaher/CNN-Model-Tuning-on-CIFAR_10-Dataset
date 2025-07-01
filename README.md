@@ -1,48 +1,50 @@
 # CNN-Model-Tuning-on-CIFAR_10-Dataset
 
-CIFAR-10 CNN Accuracy Improvement
+**CIFAR-10 CNN Accuracy Improvement**
+
 This project focuses on improving the accuracy of a Convolutional Neural Network (CNN) on the CIFAR-10 dataset using hyperparameter tuning techniques without transfer learning.
 
-Baseline Performance
-Model: Simple 2-layer CNN
+**Baseline Performance**
+* Model: Simple 2-layer CNN
 
-Test Accuracy: 64.8%
+* Test Accuracy: 64.8%
 
-Improvements Applied
-Data Normalization
+**Improvements Applied**
 
-Scaled pixel values to [0, 1].
+1.Data Normalization
 
-Train-Validation Split
+* Scaled pixel values to [0, 1].
 
-Split 10% of training data for validation.
+2.Train-Validation Split
 
-Data Augmentation
+* Split 10% of training data for validation.
 
-Applied rotation, width/height shifts, and horizontal flipping.
+3.Data Augmentation
 
-Model Architecture Tuning
+* Applied rotation, width/height shifts, and horizontal flipping.
 
-Added more convolutional layers.
+4. Model Architecture Tuning
 
-Introduced Batch Normalization and Dropout to reduce overfitting.
+* Added more convolutional layers.
 
-Optimizer Tuning
+5. Introduced Batch Normalization and Dropout to reduce overfitting.
 
-Used Adam with learning rate scheduling (ReduceLROnPlateau).
+6. Optimizer Tuning
 
-Callbacks
+* Used Adam with learning rate scheduling (ReduceLROnPlateau).
 
-Used EarlyStopping to halt training when validation accuracy stopped improving.
+7. Callbacks
 
-Evaluation Metrics
+* Used EarlyStopping to halt training when validation accuracy stopped improving.
 
-Final accuracy on test set.
+8. Evaluation Metrics
 
-Confusion matrix and classification report.
+* Final accuracy on test set.
 
-Training/validation accuracy and loss curves.
+* Confusion matrix and classification report.
 
-Final Performance
+* Training/validation accuracy and loss curves.
+
+**Final Performance**
 Test Accuracy After Tuning: 84.6%
 
