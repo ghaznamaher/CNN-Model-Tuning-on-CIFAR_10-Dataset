@@ -4,47 +4,20 @@
 
 This project focuses on improving the accuracy of a Convolutional Neural Network (CNN) on the CIFAR-10 dataset using hyperparameter tuning techniques without transfer learning.
 
-**Baseline Performance**
-* Model: Simple 2-layer CNN
+**Here is a summary of the steps we took in this notebook:**
 
-* Test Accuracy: 64.8%
+1.*Import Libraries:* Imported necessary libraries for data manipulation, model building, and visualization.
+2.*Load and Normalize Data:* Loaded the CIFAR-10 dataset and normalized the pixel values.
+3.*Split Data:* Split the training data into training and validation sets.
+4.*Image Augmentation:* Applied image augmentation to the training data.
+5.*Build and Train Baseline Model:* Created, compiled, and trained a baseline CNN model.
+6.*Evaluate Baseline Model:* Evaluated the baseline model's performance and plotted learning curves.
+7.*Experiment with Regularization and Architecture:* Built, trained, and evaluated models with Batch Normalization, Dropout, and increased depth individually.
+8.*Experiment with Optimizer Tuning:* Built, trained, and evaluated a model with SGD with Momentum.
+9.*Experiment with Callbacks:* Built, trained, and evaluated a model using Learning Rate Scheduler, Early Stopping, and Model Checkpoint.
+10.*Build and Train Combined Model:* Created, compiled, and trained a model incorporating multiple improvements.
+11.*Evaluate All Models:* Evaluated all the models on the test set and presented a performance summary.
+12.*Visualize Confusion Matrices:* Plotted confusion matrices for each model.
+13.*Report and Discuss:* Provided a report discussing the reasoning behind the changes and the impact of each technique on model performance.
 
-**Improvements Applied**
-
-1.Data Normalization
-
-* Scaled pixel values to [0, 1].
-
-2.Train-Validation Split
-
-* Split 10% of training data for validation.
-
-3.Data Augmentation
-
-* Applied rotation, width/height shifts, and horizontal flipping.
-
-4. Model Architecture Tuning
-
-* Added more convolutional layers.
-
-5. Introduced Batch Normalization and Dropout to reduce overfitting.
-
-6. Optimizer Tuning
-
-* Used Adam with learning rate scheduling (ReduceLROnPlateau).
-
-7. Callbacks
-
-* Used EarlyStopping to halt training when validation accuracy stopped improving.
-
-8. Evaluation Metrics
-
-* Final accuracy on test set.
-
-* Confusion matrix and classification report.
-
-* Training/validation accuracy and loss curves.
-
-**Final Performance**
-Test Accuracy After Tuning: 84.6%
 
